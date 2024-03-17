@@ -2,44 +2,16 @@
 
 This repository contains the codebase for the blog post titled "[A simple HTTP node endpoint on AWS](https://www.backendmentor.io/articles/aws-node-simple-http-endpoint)".
 
+This AWS CDK stack sets up a simple HTTP endpoint using a Node.js Lambda function.
+
 ## Table of Contents
 
-- [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Testing Lambda Output with curl](#testing-lambda-output-with-curl)
 - [Reporting Issues or Suggestions](#reporting-issues-or-suggestions)
 - [License](#license)
-
-## Overview
-
-This AWS CDK stack sets up a simple HTTP endpoint using a Node.js Lambda function. Here's a breakdown of each component and what you would learn from deploying this stack:
-
-### Lambda Function (`myLambda`)
-
-- A Node.js Lambda function named `MyLambda` is defined using the `NodejsFunction` construct from AWS CDK.
-- The Lambda function is configured to use Node.js 16.x runtime (`runtime: Runtime.NODEJS_16_X`).
-- The code for the Lambda function is located in the `./lib/handler.js` file, and the `handler` function is used as the entry point.
-
-### Function URL
-
-- The Lambda function is configured to generate a function URL using the `addFunctionUrl` method.
-- The `authType` is set to `FunctionUrlAuthType.NONE`, indicating that the HTTP endpoint does not require any authentication.
-
-### Output
-
-- The generated URL of the Lambda function (`lambdaUrl.url`) is outputted as a CloudFormation output (`LambdaEndpoint`).
-- This URL serves as the HTTP endpoint for invoking the Lambda function directly.
-
-By deploying this stack, you would learn how to:
-
-- Create a Node.js Lambda function using AWS CDK.
-- Configure the runtime version and entry point for the Lambda function.
-- Generate an HTTP endpoint URL for the Lambda function.
-- Output the URL of the Lambda function as a CloudFormation output for easy access.
-
-This stack provides a basic setup for creating a serverless HTTP endpoint using AWS Lambda, allowing you to quickly expose your Lambda function over HTTP without the need for additional services like API Gateway.
 
 ## Prerequisites
 
