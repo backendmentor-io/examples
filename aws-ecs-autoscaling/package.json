@@ -1,8 +1,8 @@
 {
-  "name": "aws-node-simple-http-endpoint",
+  "name": "aws-ecs-autoscaling",
   "version": "0.1.0",
   "bin": {
-    "aws-node-simple-http-endpoint": "bin/index.js"
+    "aws-ecs-autoscaling": "bin/index.js"
   },
   "scripts": {
     "build": "tsc",

@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("aws-cdk-lib");
+const stack_1 = require("../lib/stack");
+const env = { account: '906159550171', region: 'ap-southeast-2' };
+const app = new cdk.App();
+new stack_1.AwsOpensearchStack(app, 'AwsOpensearchStack', { env: env });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSx1Q0FBcUM7QUFDckMsbUNBQW1DO0FBQ25DLHdDQUFrRDtBQUVsRCxNQUFNLEdBQUcsR0FBRyxFQUFFLE9BQU8sRUFBRSxjQUFjLEVBQUUsTUFBTSxFQUFFLGdCQUFnQixFQUFFLENBQUM7QUFFbEUsTUFBTSxHQUFHLEdBQUcsSUFBSSxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUM7QUFDMUIsSUFBSSwwQkFBa0IsQ0FBQyxHQUFHLEVBQUUsb0JBQW9CLEVBQUUsRUFBRSxHQUFHLEVBQUUsR0FBRyxFQUFFLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIiMhL3Vzci9iaW4vZW52IG5vZGVcbmltcG9ydCAnc291cmNlLW1hcC1zdXBwb3J0L3JlZ2lzdGVyJztcbmltcG9ydCAqIGFzIGNkayBmcm9tICdhd3MtY2RrLWxpYic7XG5pbXBvcnQgeyBBd3NPcGVuc2VhcmNoU3RhY2sgfSBmcm9tICcuLi9saWIvc3RhY2snO1xuXG5jb25zdCBlbnYgPSB7IGFjY291bnQ6ICc5MDYxNTk1NTAxNzEnLCByZWdpb246ICdhcC1zb3V0aGVhc3QtMicgfTtcblxuY29uc3QgYXBwID0gbmV3IGNkay5BcHAoKTtcbm5ldyBBd3NPcGVuc2VhcmNoU3RhY2soYXBwLCAnQXdzT3BlbnNlYXJjaFN0YWNrJywgeyBlbnY6IGVudiB9KTtcbiJdfQ==
