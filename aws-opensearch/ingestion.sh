@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # OpenSearch endpoint
-OPENSEARCH_ENDPOINT="https://search-myopensearchclu-9cyw45d9hhhg-v52r525nltr2fdkxpjg4fzbtgm.ap-southeast-2.es.amazonaws.com"
+OPENSEARCH_ENDPOINT="{{YOUR OPENSEARCH ENDPOINT URL}}"
 
 # Username and password for authentication
 USERNAME="admin"
